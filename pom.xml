@@ -24,11 +24,18 @@
                 <configuration>
                     <printFailingErrors>true</printFailingErrors>
                     <linkXRef>false</linkXRef>
+                    <!-- ÖNEMLİ: Priority değerlerini çeşitlendirmek için kural setlerini ekledik -->
+                    <rulesets>
+                        <ruleset>/category/java/errorprone.xml</ruleset>
+                        <ruleset>/category/java/bestpractices.xml</ruleset>
+                        <ruleset>/category/java/design.xml</ruleset>
+                        <ruleset>/category/java/codestyle.xml</ruleset>
+                    </rulesets>
                 </configuration>
                 <executions>
                     <execution>
                         <goals>
-                            <goal>check</goal> <!-- Derleme sırasında kontrol et -->
+                            <goal>check</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -45,11 +52,18 @@
 
     <reporting>
         <plugins>
-            <!-- Raporun içine PMD sonuçlarını ekle -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.21.2</version>
+                <configuration>
+                    <rulesets>
+                        <ruleset>/category/java/errorprone.xml</ruleset>
+                        <ruleset>/category/java/bestpractices.xml</ruleset>
+                        <ruleset>/category/java/design.xml</ruleset>
+                        <ruleset>/category/java/codestyle.xml</ruleset>
+                    </rulesets>
+                </configuration>
             </plugin>
         </plugins>
     </reporting>
