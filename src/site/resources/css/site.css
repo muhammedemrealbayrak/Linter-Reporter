@@ -1,0 +1,108 @@
+/* =========================================================
+   MAVEN MODERN DASHBOARD THEME - TAMAMEN STABİL SÜRÜM
+   ========================================================= */
+
+/* 1. GENEL GÖVDE VE ARKA PLAN */
+body {
+    margin: 0 !important;
+    padding: 30px 40px !important;
+    background-color: #f8fafc !important; /* Çok açık, ferah bir arka plan */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    color: #334155 !important;
+}
+
+/* 2. RAHATSIZ EDİCİ SOL MENÜYÜ VE LOGOYU TAMAMEN YOK ET */
+#leftColumn, #navcolumn {
+    display: none !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+/* "Built by Maven" vb. tüm logoları ve gereksiz kalıntıları gizle */
+#poweredBy, .poweredBy, img[alt="Built by Maven"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* 3. ANA İÇERİK KUTUSU (Merkezlenmiş, Gölge Efektli Tek Parça Gövde) */
+#bodyColumn {
+    margin: 0 auto !important; /* Sola yaslanmayı iptal edip ekranı ortalar */
+    padding: 40px 50px !important;
+    background-color: #ffffff !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01) !important; /* Modern derinlik */
+    max-width: 1200px !important; /* Çok geniş ekranlarda yayılmayı önler */
+}
+
+/* 4. BAŞLIKLARDAKİ ÇİRKİN GRİ KUTULARI VE ÇİZGİLERİ TEMİZLE */
+h2 {
+    background: transparent !important; /* Gri arka planı kaldırır */
+    border: none !important;
+    border-bottom: 2px solid #3b82f6 !important; /* Sadece alt çizgi kalır */
+    color: #0f172a !important;
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+    padding: 0 0 10px 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 25px !important;
+    display: block !important;
+}
+
+h3 {
+    color: #1e293b !important;
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    padding-bottom: 8px !important;
+    margin-top: 35px !important;
+    margin-bottom: 15px !important;
+}
+
+/* 5. TABLOLAR (Data Grid Görünümü) */
+table.bodyTable {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 20px 0 !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+table.bodyTable th {
+    background-color: #f1f5f9 !important;
+    color: #475569 !important;
+    text-align: left !important;
+    padding: 16px 20px !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #e2e8f0 !important;
+}
+
+table.bodyTable td {
+    padding: 14px 20px !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    font-size: 0.95rem !important;
+    color: #334155 !important;
+    vertical-align: middle !important;
+}
+
+/* Tablo satırlarına üzerine gelme (hover) efekti */
+table.bodyTable tr:hover td {
+    background-color: #f8fafc !important;
+}
+
+/* 6. ÜST BİLGİ ÇUBUĞUNU (Tarih ve Sürüm) SADELEŞTİR */
+#breadcrumbs {
+    background-color: transparent !important;
+    border: none !important;
+    color: #94a3b8 !important;
+    font-size: 0.8rem !important;
+    text-align: right !important;
+    padding: 0 0 20px 0 !important;
+}
